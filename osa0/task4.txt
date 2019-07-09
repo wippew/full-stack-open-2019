@@ -1,0 +1,12 @@
+User->Browser: Button save is pushed.
+Browser->Server: send a POST: fullstack-exampleapp.herokuapp.com/new_note.
+Server->Browser: receive a "status 302 found", which refreshes the page.
+Browser->Server: send a GET fullstack-exampleapp.herokuapp.com/notes.
+Server->Browser: receive a "status 200" and all the HTML code.
+Browser->Server: send a GET for the page's main.css: fullstack-exampleapp.herokuapp.com/main.css
+Server->Browser: receive "status 200" and all the styling.
+Browser->Server: send a GET for js: fullstack-exampleapp.herokuapp.com/main.js
+Server->Browser: receive the js.
+Browser->Server: send a GET for the data: fullstack-exampleapp.herokuapp.com/data.json
+Server->Browser: receive a "status 200" containing all the info for the notes, including the recently added one.
+Broser->User: Show the refreshed page with the new note included.
