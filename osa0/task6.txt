@@ -1,0 +1,3 @@
+Browser->Server: send a POST: fullstack-exampleapp.herokuapp.com/new_note_spa
+Server->Browser: receive a status code 201 and a document with the info: {"message":"note created"}
+The important thing is that the browser doesn't referesh and reload the page. 
