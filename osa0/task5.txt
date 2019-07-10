@@ -1,0 +1,9 @@
+Browser->Server: send a POST: fullstack-exampleapp.herokuapp.com/spa
+Server->Browser: receive all the HTML elements
+Browser->Server: send a GET for styling: fullstack-exampleapp.herokuapp.com/main.css
+Server->Browser: receive all the styling code in main.css
+Browser->Server: send a GET for the page's main.css: fullstack-exampleapp.herokuapp.com/spa.js
+Server->Browser: receive the javascript code
+Browser->Server: send a GET for js: fullstack-exampleapp.herokuapp.com/data.json
+Server->Browser: receive the data on the page, which appear to be notes
+Browser->User: Show the same note page apparently.
