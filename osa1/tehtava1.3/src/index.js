@@ -45,8 +45,8 @@ const App = () => {
     <div>
       <Header text={course}/>
       <Content courses1={part1.name} points1={part1.exercises}/>
-      <Content courses2={part2} points2={part2.exercises2}/>
-      <Content courses3={part3} points3={part3.exercises3}/>
+      <Content courses2={part2.name} points2={part2.exercises2}/>
+      <Content courses3={part3.name} points3={part3.exercises3}/>
       <Total exercises1={exercises1} exercises2={exercises2} exercises3={exercises3}/>
     </div>
   )
